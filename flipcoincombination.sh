@@ -1,4 +1,14 @@
 #!/bin/bash -x
 
-echo Welcome to Flipcoincombination
+Head=1;
+randomcheck=$((RANDOM%2));
+
+case $randomcheck in
+                 $Head)
+                 echo Heads
+                 ;;
+                 *)
+                 echo Tails
+                 ;;
+esac
 
